@@ -1,0 +1,819 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESRI.ArcGIS.Client.Application.Layout</name>
+    </assembly>
+    <members>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.AttachmentInfoToImageUriConverter">
+            <summary>
+            Converts an <see cref="T:ESRI.ArcGIS.Client.FeatureService.AttachmentInfo"/> object to 
+            a thumbnail Uri for the attachment.  
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.AttachmentInfoToImageUriConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a thumbnail Uri
+            </summary>
+            <param name="value">The source AttachmentInfo being passed to the target.</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property.</param>
+            <param name="parameter">An optional parameter to be used in the converter logic.</param>
+            <param name="culture">The culture of the conversion.</param>
+            <returns>
+            The Uri value to be passed to the target dependency property.
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.AttachmentInfoToImageUriConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented.
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.BooleanToCollapsedConverter">
+            <summary>
+            Converts a Boolean to a Visibility value.  Returns Collapsed if true, Visible if null or false
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.BooleanToCollapsedConverter.System#Windows#Data#IValueConverter#Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a Visibility value
+            </summary>
+            <param name="value">The source boolean being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The Visibility value to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.BooleanToCollapsedConverter.System#Windows#Data#IValueConverter#ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.BooleanToVisibilityConverter">
+            <summary>
+            Converts a Boolean to a Visibility value.  Returns Visible if true, Collapsed if null or false.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.BooleanToVisibilityConverter.System#Windows#Data#IValueConverter#Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a Visibility value
+            </summary>
+            <param name="value">The source boolean being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The Visibility value to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.BooleanToVisibilityConverter.System#Windows#Data#IValueConverter#ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.NullVisibilityConverter">
+            <summary>
+            Converts an object to a Visibility value based on whether it is null.  Returns Visible if the object is
+            null, Collapsed if not.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.NullVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a Visibility value
+            </summary>
+            <param name="value">The source object being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The Visibility value to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.NullVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.EditorSwatchGenerator">
+            <summary>
+            Converts a <see cref="T:ESRI.ArcGIS.Client.Toolkit.SymbolTemplate"/> to a editing template symbol.
+            Swatch accounts for the template's symbology and drawing mode.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.EditorSwatchGenerator.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a symbol
+            </summary>
+            <param name="value">The source SymbolTemplate being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The symbol to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.EditorSwatchGenerator.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.HasAttachmentsConverter">
+            <summary>
+            Converts a <see cref="T:ESRI.ArcGIS.Client.Layer"/> to a <see cref="T:ESRI.ArcGIS.Client.FeatureLayer"/> if
+            it is a FeatureLayer with attachments
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.HasAttachmentsConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a FeatureLayer
+            </summary>
+            <param name="value">The source Layer being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The FeatureLayer to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.HasAttachmentsConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.ImageUrlResolver">
+            <summary>
+            Converts a URL to a <see cref="T:System.Windows.Media.Imaging.BitmapImage"/>
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.ImageUrlResolver.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a BitmapImage
+            </summary>
+            <param name="value">The source URL string being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The BitmapImage to be passed to the target dependency property
+            </returns>        
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.ImageUrlResolver.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.ImageUrlResolver.resolveUrlForImage(System.String)">
+            <summary>
+            Resolves a URL to a BitmapImage that is valid for the current <see cref="T:ESRI.ArcGIS.Client.Extensibility.MapApplication"/>
+            </summary>
+            <param name="urlToBeResolved">The URL to be resolved</param>
+            <returns>A BitmapImage</returns>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.LocalizationConverter">
+            <summary>
+            Converts a resource key to the corresponding resource string for the current culture.  Can be inherited
+            from to implement localization in third party code.
+            </summary>
+        </member>
+        <member name="F:ESRI.ArcGIS.Client.Application.Layout.Converters.LocalizationConverter.resourceManager">
+            <summary>
+            The Resource Manager loads the resources out of the executing assembly (and the XAP File where there are embedded)
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.LocalizationConverter.Get(System.String)">
+            <summary>
+            Returns the localized string of the given resource.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.LocalizationConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a resource string
+            </summary>
+            <param name="value">The key of the resource string</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The resource string to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.LocalizationConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Converters.LocalizationConverter.Assembly">
+            <summary>
+            Gets the assembly that resource strings are retrieved from
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Converters.LocalizationConverter.ResourceFileName">
+            <summary>
+            Gets the namespace-qualified name of the resource file that resource strings are retrieved from
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.NullOrEmptyStringToBoolConverter">
+            <summary>
+            Converts a string to a Boolean based on whether or not the string is null or empty.  Returns true if the
+            string is null or empty, false if not.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.NullOrEmptyStringToBoolConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a Boolean
+            </summary>
+            <param name="value">The source string being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The Boolean to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.NullOrEmptyStringToBoolConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.NotNullVisibilityConverter">
+            <summary>
+            Converts an object to a Visibility value based on whether or not it is null.  Returns Collapsed if null,
+            Visible if not.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.NotNullVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a Visibility value
+            </summary>
+            <param name="value">The source object being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The Visibility value to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.NotNullVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.ReverseEnumerationConverter">
+            <summary>
+            Converts a <see cref="T:System.Collections.IEnumerable"/> to an IEnumerable with the same items in reverse
+            order
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.ReverseEnumerationConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to an IEnumerable with the items reversed from the input IEnumerable
+            </summary>
+            <param name="value">The source IEnumerable being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The reversed IEnumerable to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.ReverseEnumerationConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to an IEnumerable with the items reversed from the input IEnumerable
+            </summary>
+            <param name="value">The source IEnumerable being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The reversed IEnumerable to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.TemplatePickerTextConverter">
+            <summary>
+            Converts a <see cref="T:ESRI.ArcGIS.Client.FeatureService.FeatureTemplate"/> to a string containing
+            instructions for drawing features on the map
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.TemplatePickerTextConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to an instructional string
+            </summary>
+            <param name="value">The source FeatureTemplate being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The string to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.TemplatePickerTextConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.VisibilityToBooleanConverter">
+            <summary>
+            Converts a Visibility value to a Boolean.  Returns true if Visible, false if Collapsed.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.VisibilityToBooleanConverter.System#Windows#Data#IValueConverter#Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a Boolean
+            </summary>
+            <param name="value">The source Visibility value being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The Boolean to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.VisibilityToBooleanConverter.System#Windows#Data#IValueConverter#ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to a Visibility value
+            </summary>
+            <param name="value">The source Boolean being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter to be used in the converter logic</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The Visibility value to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.PassAssociatedObjectAction">
+            <summary>
+            Internal use only.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.PassAssociatedObjectAction.Invoke(System.Object)">
+            <summary>
+            Invokes the action
+            </summary>
+            <param name="parameter">Not used</param>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.PassAssociatedObjectAction.OnTargetChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)">
+            <summary>
+            Called when the Target property chnages
+            </summary>
+            <param name="oldTarget"></param>
+            <param name="newTarget"></param>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Converters.VisibilityToIntConverter">
+            <summary>
+            Converts a Visibility value to an Integer.  By default, returns 1 if Visible, 0 if Collapsed.  Alternate
+            values can be specified via ConverterParameter.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.VisibilityToIntConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Perform the conversion to an Integer
+            </summary>
+            <param name="value">The source Visibility value being passed to the target</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property</param>
+            <param name="parameter">An optional parameter used to specify alternate integer values to convert to.  Specify the integer for Visible, then Collapsed, with a comma separating them</param>
+            <param name="culture">The culture of the conversion</param>
+            <returns>
+            The Integer to be passed to the target dependency property
+            </returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.Converters.VisibilityToIntConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.AddPointInstructions">
+            <summary>
+              Looks up a localized string similar to Click on the map to create {0} feature..
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.AddSelect">
+            <summary>
+              Looks up a localized string similar to Add to selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.AddSelectDescription">
+            <summary>
+              Looks up a localized string similar to Add features to current selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.AddShapeInstructions">
+            <summary>
+              Looks up a localized string similar to Click on the map to add vertices, then double-click to create {0} feature..
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.AttributesOf">
+            <summary>
+              Looks up a localized string similar to Attributes of {0}.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.AutoComplete">
+            <summary>
+              Looks up a localized string similar to Auto Complete.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.AutoCompleteDescription">
+            <summary>
+              Looks up a localized string similar to Auto-complete polygons.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.AutoZoomToSelected">
+            <summary>
+              Looks up a localized string similar to Auto Zoom to Selected.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.BrowseTabHeader">
+            <summary>
+              Looks up a localized string similar to Browse.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.BtnBack">
+            <summary>
+              Looks up a localized string similar to Back.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.BtnCancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.BtnNext">
+            <summary>
+              Looks up a localized string similar to Next.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.BtnOk">
+            <summary>
+              Looks up a localized string similar to OK.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Button">
+            <summary>
+              Looks up a localized string similar to Button.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.CancelTool">
+            <summary>
+              Looks up a localized string similar to Cancel tool.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ClearSelect">
+            <summary>
+              Looks up a localized string similar to Clear selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ClickToMoveEast">
+            <summary>
+              Looks up a localized string similar to Click to move east.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ClickToMoveNorth">
+            <summary>
+              Looks up a localized string similar to Click to move north.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ClickToMoveSouth">
+            <summary>
+              Looks up a localized string similar to Click to move south.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ClickToMoveWest">
+            <summary>
+              Looks up a localized string similar to Click to move west.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Commit">
+            <summary>
+              Looks up a localized string similar to Commit.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ContentsTabHeader">
+            <summary>
+              Looks up a localized string similar to Contents.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ContentTypeColon">
+            <summary>
+              Looks up a localized string similar to Content Type: .
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.CouldNotLoadViewer">
+            <summary>
+              Looks up a localized string similar to The Viewer could not be loaded.  Check your browser&apos;s console for further details..
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Cut">
+            <summary>
+              Looks up a localized string similar to Cut.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.CutDescription">
+            <summary>
+              Looks up a localized string similar to Cut feature.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.DeleteAttachment">
+            <summary>
+              Looks up a localized string similar to Delete this attachment.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.DeleteSelect">
+            <summary>
+              Looks up a localized string similar to Delete selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.DeleteSelectDescription">
+            <summary>
+              Looks up a localized string similar to Delete selected features.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.DragToRotate">
+            <summary>
+              Looks up a localized string similar to Drag to rotate.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.DragToZoomInOrOut">
+            <summary>
+              Looks up a localized string similar to Drag to zoom in or out.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.DrawingDotDot">
+            <summary>
+              Looks up a localized string similar to Drawing....
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.EditGeometry">
+            <summary>
+              Looks up a localized string similar to Edit shape.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.EditShapeDescription">
+            <summary>
+              Looks up a localized string similar to Edit feature geometry, location, rotation, or scale.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.EditTabHeader">
+            <summary>
+              Looks up a localized string similar to Add Features.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.EditValues">
+            <summary>
+              Looks up a localized string similar to Edit values.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.EditValuesDescription">
+            <summary>
+              Looks up a localized string similar to Edit feature values.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Freehand">
+            <summary>
+              Looks up a localized string similar to Freehand.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.FreehandDescription">
+            <summary>
+              Looks up a localized string similar to Use freehand to create lines or shapes.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.FullExtent">
+            <summary>
+              Looks up a localized string similar to Full Extent.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.InitializingViewer">
+            <summary>
+              Looks up a localized string similar to Initializing Viewer....
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.MapContentsTabHeader">
+            <summary>
+              Looks up a localized string similar to Map Contents.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.MoveBarUpZoomInMoveDownToZoomOut">
+            <summary>
+              Looks up a localized string similar to Move bar up to zoom in, down to zoom out.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.MoveFirst">
+            <summary>
+              Looks up a localized string similar to Move First.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.MoveLast">
+            <summary>
+              Looks up a localized string similar to Move Last.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.MoveNext">
+            <summary>
+              Looks up a localized string similar to Move Next.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.MovePrevious">
+            <summary>
+              Looks up a localized string similar to Move Previous.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.NameColon">
+            <summary>
+              Looks up a localized string similar to Name: .
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.NewSelect">
+            <summary>
+              Looks up a localized string similar to New selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.NewSelectDescription">
+            <summary>
+              Looks up a localized string similar to Start a new selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.OpenItem">
+            <summary>
+              Looks up a localized string similar to Open item.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Options">
+            <summary>
+              Looks up a localized string similar to Options.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.OptionsDotDot">
+            <summary>
+              Looks up a localized string similar to Options ....
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Print">
+            <summary>
+              Looks up a localized string similar to Print.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.PrintPreviewColon">
+            <summary>
+              Looks up a localized string similar to Print Preview:.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.RecordColon">
+            <summary>
+              Looks up a localized string similar to Record:.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.RecordsOutOfSelected">
+            <summary>
+              Looks up a localized string similar to Records ({0} out of {1} Selected).
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.RemoveSelect">
+            <summary>
+              Looks up a localized string similar to Remove from selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.RemoveSelectDescription">
+            <summary>
+              Looks up a localized string similar to Remove feature from current selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ResetNorth">
+            <summary>
+              Looks up a localized string similar to Reset North.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Reshape">
+            <summary>
+              Looks up a localized string similar to Reshape.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ReshapeDescription">
+            <summary>
+              Looks up a localized string similar to Reshape feature.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.SaveEdit">
+            <summary>
+              Looks up a localized string similar to Save edits.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Search">
+            <summary>
+              Looks up a localized string similar to Search.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.SearchTabHeader">
+            <summary>
+              Looks up a localized string similar to Search.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.SizeColon">
+            <summary>
+              Looks up a localized string similar to Size: .
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.SwitchSelection">
+            <summary>
+              Looks up a localized string similar to Switch Selection.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Union">
+            <summary>
+              Looks up a localized string similar to Union.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.UnionDescription">
+            <summary>
+              Looks up a localized string similar to Perform union on selected features.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.UriColon">
+            <summary>
+              Looks up a localized string similar to Uri: .
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Version">
+            <summary>
+              Looks up a localized string similar to Version.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.Zoom">
+            <summary>
+              Looks up a localized string similar to Zoom.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ZoomIn">
+            <summary>
+              Looks up a localized string similar to Zoom In.
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.Resources.Strings.ZoomOut">
+            <summary>
+              Looks up a localized string similar to Zoom Out.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.ResourceUtility.LoadEmbeddedResource(System.String,System.String)">
+            <summary>
+            Load a resource from a resource dictionary embedded in the assembly
+            </summary>
+            <param name="path">The relative path to the embedded resource dictionary from the root of the assembly</param>
+            <param name="key">The key of the resource to retrieve</param>
+            <returns>The style specified by the resource dictionary path and style key</returns>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.ResourceUtility.LoadEmbeddedDictionary(System.String)">
+            <summary>
+            Load a resource dictionary embedded in the assembly
+            </summary>
+            <param name="path">The path to the resource dictionary.  Can be specified as a relative path from
+            the root of the assembly or using component path syntax.</param>
+            <returns>The resource dictionary specified by the path</returns>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.ResourceUtility.AssemblyName">
+            <summary>
+            Gets or sets the name of the assembly to load resources from
+            </summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.Client.Application.Layout.RTLHelper">
+            <summary>
+            Singleton class that helps manage LTR/RTL culture settings
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.RTLHelper.UpdateFlowDirection">
+            <summary>
+            Updates the FlowDirection property from culture settings
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.Client.Application.Layout.RTLHelper.GetFlowDirectionFromCulture">
+            <summary>
+            Returns the FlowDirection (LTR/RTL) from the Culture settings
+            </summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.Client.Application.Layout.RTLHelper.FlowDirection">
+            <summary>
+            Sets or Gets the FlowDirection. If this property is not being set
+            explicitly, call UpdateFlowDirection() to load it from culture settings
+            before getting it.
+            </summary>
+        </member>
+        <member name="E:ESRI.ArcGIS.Client.Application.Layout.RTLHelper.PropertyChanged">
+            <summary>
+            Occurs when a property on the <see cref="T:ESRI.ArcGIS.Client.Application.Layout.RTLHelper"/> changes
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,11 @@
+C:\inetpub\wwwroot\SLVT\Viewer32\Bin\Viewer.dll
+C:\inetpub\wwwroot\SLVT\Viewer32\Bin\Viewer.pdb
+C:\inetpub\wwwroot\SLVT\Viewer32\Viewer32\Viewer32\obj\Debug\Viewer.dll
+C:\inetpub\wwwroot\SLVT\Viewer32\Viewer32\Viewer32\obj\Debug\Viewer.pdb
+C:\inetpub\wwwroot\SLVT\Viewer32\Viewer32\Viewer32\obj\Debug\Viewer32.csprojResolveAssemblyReference.cache
+C:\TEMP\Viewer32\Viewer32\Bin\Viewer.dll.config
+C:\TEMP\Viewer32\Viewer32\Bin\Viewer.dll
+C:\TEMP\Viewer32\Viewer32\Bin\Viewer.pdb
+C:\TEMP\Viewer32\Viewer32\Viewer32\Viewer32\obj\Debug\Viewer32.csprojResolveAssemblyReference.cache
+C:\TEMP\Viewer32\Viewer32\Viewer32\Viewer32\obj\Debug\Viewer.dll
+C:\TEMP\Viewer32\Viewer32\Viewer32\Viewer32\obj\Debug\Viewer.pdb

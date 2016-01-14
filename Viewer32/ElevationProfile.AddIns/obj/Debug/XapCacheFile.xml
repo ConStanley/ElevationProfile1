@@ -1,0 +1,20 @@
+﻿<xapCache source="C:\inetpub\wwwroot\SLVT\Viewer32\Viewer32\ElevationProfile.AddIns\Bin\Debug\ElevationProfile.AddIns.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="4/6/2015 4:20:36 PM">
+  <file source="C:\inetpub\wwwroot\SLVT\Viewer32\Viewer32\ElevationProfile.AddIns\obj\Debug\ElevationProfile.AddIns.dll" archivePath="ElevationProfile.AddIns.dll" lastWriteTime="4/6/2015 4:20:35 PM" />
+  <file source="C:\Program Files (x86)\ESRI SDKs\Silverlight\v3.2\Extensibility\ESRI.ArcGIS.Client.Application.Controls.dll" archivePath="ESRI.ArcGIS.Client.Application.Controls.dll" lastWriteTime="11/21/2013 9:24:48 PM" />
+  <file source="C:\Program Files (x86)\ESRI SDKs\Silverlight5\v3.2\ESRI.ArcGIS.Client.dll" archivePath="ESRI.ArcGIS.Client.dll" lastWriteTime="11/20/2013 11:44:16 AM" />
+  <file source="C:\inetpub\wwwroot\SLVT\Viewer32\packages\Microsoft.Bcl.Async.1.0.168\lib\sl4\Microsoft.Threading.Tasks.dll" archivePath="Microsoft.Threading.Tasks.dll" lastWriteTime="4/6/2015 4:08:55 PM" />
+  <file source="C:\inetpub\wwwroot\SLVT\Viewer32\packages\Microsoft.Bcl.Async.1.0.168\lib\sl4\Microsoft.Threading.Tasks.Extensions.dll" archivePath="Microsoft.Threading.Tasks.Extensions.dll" lastWriteTime="4/6/2015 4:08:55 PM" />
+  <file source="C:\inetpub\wwwroot\SLVT\Viewer32\packages\Microsoft.Bcl.Async.1.0.168\lib\sl4\Microsoft.Threading.Tasks.Extensions.Silverlight.dll" archivePath="Microsoft.Threading.Tasks.Extensions.Silverlight.dll" lastWriteTime="4/6/2015 4:08:55 PM" />
+  <file source="C:\inetpub\wwwroot\SLVT\Viewer32\packages\Microsoft.Bcl.1.1.8\lib\sl5\System.IO.dll" archivePath="System.IO.dll" lastWriteTime="4/6/2015 4:08:55 PM" />
+  <file source="C:\inetpub\wwwroot\SLVT\Viewer32\packages\Microsoft.Bcl.1.1.8\lib\sl5\System.Runtime.dll" archivePath="System.Runtime.dll" lastWriteTime="4/6/2015 4:08:55 PM" />
+  <file source="C:\inetpub\wwwroot\SLVT\Viewer32\packages\Microsoft.Bcl.1.1.8\lib\sl5\System.Threading.Tasks.dll" archivePath="System.Threading.Tasks.dll" lastWriteTime="4/6/2015 4:08:55 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.DataVisualization.Toolkit.dll" archivePath="System.Windows.Controls.DataVisualization.Toolkit.dll" lastWriteTime="12/9/2011 10:25:04 AM" />
+  <file source="C:\Program Files (x86)\ESRI SDKs\Silverlight\v3.2\Extensibility\ESRI.ArcGIS.Client.Application.Layout.dll" archivePath="ESRI.ArcGIS.Client.Application.Layout.dll" lastWriteTime="11/21/2013 9:24:34 PM" />
+  <file source="C:\Program Files (x86)\ESRI SDKs\Silverlight5\v3.2\ESRI.ArcGIS.Client.Toolkit.dll" archivePath="ESRI.ArcGIS.Client.Toolkit.dll" lastWriteTime="11/20/2013 11:46:22 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="11/18/2011 4:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Json.dll" archivePath="System.Json.dll" lastWriteTime="11/18/2011 4:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="11/18/2011 4:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="11/18/2011 4:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="11/18/2011 4:40:20 PM" />
+  <file source="C:\inetpub\wwwroot\SLVT\Viewer32\Viewer32\ElevationProfile.AddIns\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/6/2015 4:20:36 PM" />
+</xapCache>

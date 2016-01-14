@@ -1,0 +1,53 @@
+/*
+(c) Copyright ESRI.
+This source is subject to the Microsoft Public License (Ms-PL).
+Please see https://urldefense.proofpoint.com/v2/url?u=http-3A__go.microsoft.com_fwlink_-3FLinkID-3D131993&d=AwICAg&c=QYgffNzgehjPA-El6wokxg&r=1Wsu-ZQ93zmoybT_L5KYs8Za5J6z-UxbzmJidN4iVdg&m=BcEljEN3iAMpfRY1BUP6tCRaCOlNuMr_EpGdRwOFcqc&s=OI2ctQ4pN7IeHra5xi1kJACSwZSljLuzM2Iw1dZyEOk&e=  for details.
+All other rights reserved.
+*/
+
+using System;
+using System.ComponentModel.Composition;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using ESRI.ArcGIS.Client.Extensibility;
+
+//make sure the ^^ this directive is referenced (ESRI.ArcGIS.Client.Extensibility)
+
+namespace ElevationProfile.AddIns
+{
+ //Creating a tool encapsulate it in a button by implementing the ICommand interface as tools
+    //The ESRI.ArcGIS.Client.Extensibility.DisplayName is required (This is the name of the tool when it shows up in the designer when adding it to the viewer)
+    //Optional attributes that can be included from the ESRI.ArcGIS.Client.Extensibility assembly include CategoryAttribute, DefaultIconAttribute, and DescriptionAttribute
+    [Export(typeof(ICommand))]
+    [DisplayName("Elevation Profile")]
+    [Description("Retrieve the elevation profile along a line drawn on the map")]
+    [Category("Analysis")]
+    public class ElevationProfileTool : ICommand
+    {
+        private DrawingToolsDialog _toolsDialog;
+
+        #region ICommand members
+        public void Execute(object parameter)
+        {
+            if (_toolsDialog == null)
+                _toolsDialog = new DrawingToolsDialog() { Margin = new Thickness(10,10,0,10) };
+
+            var rootVisual = (FrameworkElement)Application.Current.RootVisual;
+            var left = rootVisual.ActualWidth - 350;
+            var top = MapApplication.Current.IsEditMode ? 250 : 100;
+
+            MapApplication.Current.ShowWindow("Elevation Profile Draw Tools", _toolsDialog, false, (s, a) => _toolsDialog.CloseProfile(), null, WindowType.Floating, top, left);
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            // Return true so that the command can always be executed
+            return true;
+        }
+
+        public event EventHandler CanExecuteChanged;
+
+        #endregion
+    }
+}

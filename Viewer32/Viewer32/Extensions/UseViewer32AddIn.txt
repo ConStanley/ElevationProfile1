@@ -1,0 +1,3 @@
+Use viewer 32 add in. I WILL learn how to build from scratch--good enough for now.
+
+Elevation Profile Tool for Silverlight Builder App

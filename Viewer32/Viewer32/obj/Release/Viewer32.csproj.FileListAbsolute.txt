@@ -1,0 +1,5 @@
+C:\TEMP\Viewer32\Viewer32\Bin\Viewer.dll.config
+C:\TEMP\Viewer32\Viewer32\Bin\Viewer.dll
+C:\TEMP\Viewer32\Viewer32\Bin\Viewer.pdb
+C:\TEMP\Viewer32\Viewer32\Viewer32\Viewer32\obj\Release\Viewer.dll
+C:\TEMP\Viewer32\Viewer32\Viewer32\Viewer32\obj\Release\Viewer.pdb

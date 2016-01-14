@@ -1,0 +1,68 @@
+<!--
+(c) Copyright ESRI.
+This source is subject to the Microsoft Public License (Ms-PL).
+Please see http://go.microsoft.com/fwlink/?LinkID=131993 for details.
+All other rights reserved.
+-->
+
+<UserControl 
+    x:Class="ElevationProfile.AddIns.DrawingToolsDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:esri="http://schemas.esri.com/arcgis/client/2009"
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400"
+    HorizontalAlignment="Center">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.Resources>
+            <esri:SimpleRenderer x:Name="LineRenderer">
+                <esri:SimpleLineSymbol Color="Green" Width="3" Style="Solid" />
+            </esri:SimpleRenderer>
+            <esri:SimpleRenderer x:Name="PointRenderer">
+                <esri:SimpleMarkerSymbol Size="28" Color="Red">
+                    <esri:MarkerSymbol.ControlTemplate>
+                        <ControlTemplate>
+                            <Grid Width="{Binding Symbol.Size}" Height="{Binding Symbol.Size}" RenderTransformOrigin="0.5,0.5">
+                                <Rectangle Height="3" Fill="{Binding Symbol.Color}" VerticalAlignment="Center" />
+                                <Rectangle Width="3" Fill="{Binding Symbol.Color}" HorizontalAlignment="Center" />
+                            </Grid>
+                        </ControlTemplate>
+                    </esri:MarkerSymbol.ControlTemplate>
+                </esri:SimpleMarkerSymbol>
+            </esri:SimpleRenderer>
+        </Grid.Resources>
+        <StackPanel Orientation="Vertical"
+                    Width="300">
+            <TextBlock Text="Draw line for elevation profile and hover on chart for position, altitude and distance"
+                       Margin="5" TextWrapping="Wrap" />
+            <StackPanel x:Name="MyStackPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Tag="DrawPolyline" Margin="5" Click="Tool_Click"
+                        ToolTipService.ToolTip="Add a polyline"
+                        Background="White">
+                    <Image Source="/ElevationProfile.Addins;component/Assets/images/DrawPolyline.png" Margin="2" />
+                </Button>
+                <Button Tag="DrawFreehand" Margin="5" Click="Tool_Click"
+                        ToolTipService.ToolTip="Add a freehand line"
+                        Background="White">
+                    <Image Source="/ElevationProfile.Addins;component/Assets/images/DrawFreehand.png" Margin="2" />
+                </Button>
+                <Button Tag="ClearStopDraw" Margin="5" Click="Tool_Click"
+                        ToolTipService.ToolTip="Clear graphics"
+                        Background="White">
+                    <Image Source="/ElevationProfile.Addins;component/Assets/images/StopDraw.png" Margin="2" />
+                </Button>
+            </StackPanel>
+            <ProgressBar x:Name="ProfileCalculationBusyIndicator"
+                         IsIndeterminate="True"
+                         Width="120"
+                         Height="14"
+                         Visibility="Collapsed"
+                         HorizontalAlignment="Center"
+                         Margin="0,10,0,0" />
+        </StackPanel>
+    </Grid>
+</UserControl>
